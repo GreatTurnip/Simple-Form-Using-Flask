@@ -1,0 +1,72 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background: #ffd700;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: #ffc107;
+}
+
+/* Greeting text */
+h2 {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+h2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 i {
+    font-style: italic;
+    color: #ffd700;
+}
